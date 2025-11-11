@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하나머티리얼즈 - 기술과 미래</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Hana Materials</div>
+        <nav>
+            <ul>
+                <li><a href="#company">회사 소개</a></li>
+                <li><a href="#products">제품/기술</a></li>
+                <li><a href="#recruit">채용 정보</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="main-visual">
+        <h1>반도체 핵심 기술, 하나머티리얼즈</h1>
+        <p>글로벌 탑티어 수준의 반도체 공정용 부품 전문 기업입니다.</p>
+        <button id="more-info-btn">더 알아보기</button>
+    </section>
+
+    <section id="company" class="content-section">
+        <h2>회사 소개</h2>
+        <p>하나머티리얼즈는 반도체 식각(Etching) 공정에 사용되는 **실리콘(Si) 및 실리콘 카바이드(SiC) 부품**을 주로 생산합니다. 글로벌 반도체 산업의 성장에 기여합니다.</p>
+    </section>
+
+    <section id="products" class="content-section">
+        <h2>주요 제품 및 기술</h2>
+        <ul>
+            <li>**Si & SiC Focusing Ring:** 식각 공정의 핵심 부품</li>
+            <li>**Electrode:** 플라즈마 발생 및 제어 부품</li>
+            <li>**R&D Innovation:** 지속적인 기술 개발 투자</li>
+        </ul>
+    </section>
+    
+    <section id="recruit" class="content-section">
+        <h2>채용 정보 (JavaScript 테스트 영역)</h2>
+        <p id="recruit-message">현재 채용 정보를 불러오는 중입니다...</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hana Materials (Assignment)</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
