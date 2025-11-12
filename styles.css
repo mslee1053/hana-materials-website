@@ -7,11 +7,10 @@
 }
 
 :root {
-    --color-primary: #0B305E; /* 진한 네이비 */
-    --color-accent: #FF7F00; /* 주황색 강조 */
+    --color-primary: #0B305E; /* 진한 네이비 (메인) */
+    --color-accent: #FF7F00; /* 주황색 (강조) */
     --color-text: #333;
-    --color-light-bg: #f7f7f7;
-    --color-border: #ddd;
+    --color-light-bg: #f7f7f7; /* 배경색 */
 }
 
 body {
@@ -45,7 +44,9 @@ header {
 
 .logo-img {
     height: 35px; /* 로고 이미지 높이 설정 */
-    filter: brightness(0) invert(1); /* 이미지를 흰색으로 보이게 처리 (흰색 로고가 없을 경우) */
+    /* 🚨 로고가 흰색으로만 나오는 문제 방지: */
+    /* 이 코드를 주석 처리했습니다. 만약 로고가 네이비 배경에 묻혀서 보이지 않으면, 아래 주석을 풀고 다시 업로드하세요. */
+    /* filter: brightness(0) invert(1); */
 }
 
 header nav ul {
@@ -66,7 +67,8 @@ header nav ul li a:hover {
 
 /* 3. 메인 비주얼 (Hero) */
 #main-visual {
-    background: linear-gradient(rgba(11, 48, 94, 0.8), rgba(11, 48, 94, 0.8)), url('hero-bg.jpg') center / cover; /* 배경 이미지 파일명: hero-bg.jpg */
+    /* 배경 이미지 파일명을 hero-bg.jpg로 설정했습니다. */
+    background: linear-gradient(rgba(11, 48, 94, 0.8), rgba(11, 48, 94, 0.8)), url('hero-bg.jpg') center / cover;
     min-height: 50vh;
     display: flex;
     justify-content: center;
@@ -137,7 +139,7 @@ header nav ul li a:hover {
 }
 
 .value-item {
-    width: calc(25% - 15px); /* 4개 항목이 한 줄에 오도록 설정 */
+    width: calc(25% - 15px);
     text-align: center;
     padding: 30px 20px;
     background: white;
@@ -172,7 +174,7 @@ header nav ul li a:hover {
 }
 
 .benefit-category {
-    width: calc(33.33% - 20px); /* 3개 항목이 한 줄에 오도록 설정 */
+    width: calc(33.33% - 20px);
     background: white;
     padding: 25px;
     border-radius: 8px;
@@ -199,7 +201,7 @@ header nav ul li a:hover {
 }
 
 .benefit-category li::before {
-    content: "•"; /* 커스텀 불릿 */
+    content: "•";
     color: var(--color-primary);
     font-weight: bold;
     display: inline-block;
@@ -225,7 +227,7 @@ header nav ul li a:hover {
     background: var(--color-light-bg);
     padding: 25px;
     border-radius: 10px;
-    width: 45%; /* 2개 항목이 한 줄에 오도록 설정 */
+    width: 45%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s;
 }
